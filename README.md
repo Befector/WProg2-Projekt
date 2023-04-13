@@ -7,6 +7,6 @@
 + ***Tóth Ádám*** (1Jstr)
 + ***Dányi Benedek*** (DanyiBeni)
 
-### Beadandó határideje: 2023. 04. 15. 24:00
+### Beadandó határideje: 2023. 04. 16. 23:59
 
 
