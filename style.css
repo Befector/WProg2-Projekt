@@ -10,10 +10,16 @@ body
     margin: 0;
     padding: 20px;
   }
-  
+
+#mennyiseg-x, #mennyiseg-y{
+	border: 1px solid gray;
+	margin-left: 25px;
+}
+
 h1
   {
     color: #88e950;
+	text-shadow: 1px 1px 2px black;
   }
   
   p
@@ -26,13 +32,14 @@ h1
     color: #000000;
     background: #88e950;
     border-radius: 5px;
-    font-size: 30px;
-    padding: 2px 8px;
+    font-size: 20px;
+    padding: 4px 8px;
   }
   
 .logo-img
   {
     width: 150px;
+	border-radius: 50%;
   }
   
 .penznem
@@ -62,6 +69,7 @@ h1
   {
     display: flex;
     align-items: center;
+	
     justify-content: space-between;
   }
   
@@ -69,6 +77,7 @@ h1
   {
     color: #88e950;
     font-size: 18px;
+	font-weight: bold;
     padding: 0 10px;
   }
   
