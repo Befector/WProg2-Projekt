@@ -1,3 +1,4 @@
+    // Innentől írta Ádám
 const currencyEl_one = document.getElementById('penznem-x');
 const amountEl_one = document.getElementById('mennyiseg-x');
 const currencyEl_two = document.getElementById('penznem-y');
@@ -10,7 +11,7 @@ const swap = document.getElementById('csere');
 function calculate() {
 	const currency_one = currencyEl_one.value;
 	const currency_two = currencyEl_two.value;
-
+    // Eddig írta Ádám
 	// Innentől Krisztián írta
 	fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
 		.then(res => res.json())
