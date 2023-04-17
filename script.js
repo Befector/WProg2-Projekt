@@ -76,4 +76,24 @@ $("#mennyiseg-x, #mennyiseg-y").css({
 })
 
 // Eddig írta Benedek
+//Innentől írta Ádám
+$(".penznem").css({
+	"padding" : "25px 0",
+	"display" : "flex",
+	"align-items" : "center",
+	"justify-content" : "space-between",
+})
 
+$(".csere").css({
+	"display" : "flex",
+    "align-items" : "center",
+    "justify-content" : "space-between",
+})
+
+$(".arany").css({
+	"color" : "#88e950",
+    "font-size" : "18px",
+	"font-weight": "bold",
+    "padding" : "0 10px",
+})
+//Eddig írta Ádám
