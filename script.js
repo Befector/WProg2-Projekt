@@ -47,6 +47,15 @@ $("body").css({
 	"padding" : "20px"
 })
 
+$("#csere").bind('click', function(){
+        const temp = currencyEl_one.value;
+        currencyEl_one.value = currencyEl_two.value;
+        currencyEl_two.value = temp;
+        calculate();
+});
+
+
+
 $("h1").css({
 	"color" :  "#88e950",
 	"text-shadow" : "1px 1px 2px black"})
@@ -61,13 +70,6 @@ $(".btn").css({
 	"padding" : "4px 8px"})
 $(".logo-img").css({"width" : "150px", "border-radius" : "50%"})
 
-$("#csere").bind('click', function(){
-	const temp = currencyEl_one.value;
-	currencyEl_one.value = currencyEl_two.value;
-	currencyEl_two.value = temp;
-	calculate();
-
-});
 
 $("#mennyiseg-x, #mennyiseg-y").css({
 	"border" : "1px solid gray",
