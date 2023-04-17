@@ -17,11 +17,8 @@ function calculate() {
 	fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
 		.then(res => res.json())
 		.then(data => {
-
 			const rate = data.rates[currency_two];
-
 			rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
-
 			amountEl_two.value = (amountEl_one.value * rate).toFixed(2);
 		});
 	// Eddig írta Krisztián
@@ -48,13 +45,14 @@ $("#csere").bind('click', function(){
         currencyEl_two.value = temp;
         calculate();
 });
-// Eddig írta krisztián
-// Innentől Benedek írta
 
 $("#penznem-x").on('change', calculate)
 $("#mennyiseg-x").on('input', calculate)
 $("#penznem-y").on('change', calculate)
 $("#mennyiseg-y").on('input', calculate)
+
+// Eddig írta krisztián
+// Innentől Benedek írta
 calculate();
 
 $("h1").css({
