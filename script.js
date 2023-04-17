@@ -12,6 +12,7 @@ function calculate() {
 	const currency_one = currencyEl_one.value;
 	const currency_two = currencyEl_two.value;
     // Eddig írta Ádám
+	
 	// Innentől Krisztián írta
 	fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
 		.then(res => res.json())
@@ -28,12 +29,6 @@ function calculate() {
 
 // Innentől Krisztián írta
 // JQuery
-$("#penznem-x").on('change', calculate)
-$("#mennyiseg-x").on('input', calculate)
-$("#penznem-y").on('change', calculate)
-$("#mennyiseg-y").on('input', calculate)
-
-calculate();
 
 $("body").css({
 	"background-color" : "f4f4f4",
@@ -53,8 +48,14 @@ $("#csere").bind('click', function(){
         currencyEl_two.value = temp;
         calculate();
 });
+// Eddig írta krisztián
+// Innentől Benedek írta
 
-
+$("#penznem-x").on('change', calculate)
+$("#mennyiseg-x").on('input', calculate)
+$("#penznem-y").on('change', calculate)
+$("#mennyiseg-y").on('input', calculate)
+calculate();
 
 $("h1").css({
 	"color" :  "#88e950",
@@ -76,5 +77,5 @@ $("#mennyiseg-x, #mennyiseg-y").css({
 	"margin-left" : "25px"
 })
 
-// Eddig írta krisztián
+// Eddig írta Benedek
 
